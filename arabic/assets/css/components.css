@@ -1,0 +1,122 @@
+/* btn radius */
+.btn-radius {
+    border-radius: 1.2rem
+}
+
+/* btn outline light */
+.btn-outline-light {
+    border-color: var(--cloudy, #b1a8a0) !important;
+    background-color: var(--cloudy, #b1a8a0) !important;
+    color: var(--alabaster, #fdfcfb) !important;
+}
+
+.btn-outline-light:focus,
+.btn-outline-light:hover {
+    border-color: var(--sea-shell, #FFF4EF) !important;
+    background-color: inherit !important;
+    color: var(--sea-shell, #FFF4EF) !important
+}
+
+/* form control */
+.form-control {
+    box-shadow: 0;
+    border-color: var(--charcoal, #474549);
+    background-color: inherit;
+    color: var(--charcoal, #474549);
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: var(--sea-shell, #FFF4EF);
+    background-color: inherit;
+    color: var(--sea-shell, #FFF4EF)
+}
+
+/* placeholder */
+::placeholder {
+    color: var(--alabaster, #fdfcfb) !important;
+}
+
+:placeholder-shown {
+    color: var(--senerade) !important;
+}
+
+/* hr */
+.hr {
+    line-height: 1rem;
+    position: relative;
+    outline: 0;
+    border: 0;
+    text-align: center;
+    opacity: .5;
+    margin: 0
+}
+
+.hr:before {
+    content: '';
+    background: -webkit-linear-gradient(right, transparent, var(--grainsboro, #ddd), transparent);
+    background: linear-gradient(to left, transparent, var(--grainsboro, #ddd), transparent);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 100%;
+    height: .06rem;
+}
+
+/* headline */
+.headline p::after {
+    background: var(--grey-light, #eee);
+    height: .2rem;
+    margin: 1.5rem auto;
+    content: '';
+    display: block;
+    width: 5rem
+}
+
+.headline-align p::after {
+    margin: 1.5rem 0
+}
+
+/* tagline */
+.tagline:after {
+    background: var(--grey-light, #eee);
+    content: "";
+    display: block;
+    height: .2rem;
+    margin: 1rem 0 0;
+    width: 2rem
+}
+
+/* filter */
+.filter img {
+    filter: grayscale(100%);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.filter img:active,
+.filter img:hover {
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+/* icon resized */
+.icon-resized {
+    width: 4rem;
+    height: 4rem;
+}
+
+/* devices */
+.marvel-device .screen {
+    z-index: 9999 !important
+}
+
+.marvel-device.iphone8 {
+    width: 240px !important;
+    height: 425px !important;
+}
+
+/* font arabic */
+.font-arabic {
+    font-family:'SF Pro Gulf Bold', arial;
+}

@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+  <MiniNaim> -- <UI Developer> -- <twitter.com/@mininaim>
+  <Yazeed Al-Swailem> -- <CEO> -- <twitter.com/@yazyaz>
+
+# THANKS
+
+  yazeed@gmail.com
+
+# TECHNOLOGY COLOPHON
+
+  HTML5, CSS3, JS, NodeJs, Bootstrap4

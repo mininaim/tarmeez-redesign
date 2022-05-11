@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'SF Pro Gulf';
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/SFProGulf/SFProGulf_regular.eot");
+    src: local('â˜ºï¸Ž'), url("../fonts/SFProGulf/SFProGulf_regular.woff2") format("woff2"), url("../fonts/SFProGulf/SFProGulf_regular.woff") format("woff"), url("../fonts/SFProGulf/SFProGulf_regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'SF Pro Gulf Bold';
+    font-style: normal;
+    font-weight: 600;
+    src: local('â˜ºï¸Ž'), url("../fonts/SFProGulf/SFProGulf_semibold.woff2") format("woff2"), url("../fonts/SFProGulf/SFProGulf_semibold.woff") format("woff"), url("../fonts/SFProGulf/SFProGulf_semibold.ttf") format("truetype");
+}

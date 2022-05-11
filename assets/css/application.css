@@ -1,0 +1,409 @@
+/*!
+ * @file: application.css
+ * @Copyright: http://tarmeez.com/
+ * @author: web@tarmeez.com
+ */
+
+
+/* Vars
+   ========================================================================== */
+
+:root {
+    --alabaster: #fdfcfb;
+    --baltic: #3d3e41;
+    --napa: #b1a693;
+    --cloudy: #b1a8a0;
+    --old-lace: #fff4e6;
+    --charcoal: #474549;
+    --serenade: #FFF4E7;
+    --tuatara: #373737;
+    --god-gray: #303030;
+    --sea-shell: #FFF4EF;
+    --grey: #777;
+    --grey-light: #eee;
+    --grainsboro: #ddd;
+    --aluminum: #999;
+    --white: #fff;
+    --vista-white: #fbf9f7;
+    --black: #000;
+    --jumbo: #888;
+    --iron: #ccc;
+}
+
+
+/* Base
+   ========================================================================== */
+
+body {
+    font-family: 'Rubik', sans-serif;
+    color: var(--grey, #777);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+::-moz-selection {
+    color: var(--white, #fff);
+    text-shadow: none;
+    background: var(--baltic, #3d3e41);
+}
+
+::selection {
+    color: var(--white, #fff);
+    ;
+    text-shadow: none;
+    background: var(--baltic, #3d3e41);
+}
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: var(--napa, #b1a693);
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: none;
+    color: var(--baltic, #3d3e41)
+}
+
+[type=reset],
+[type=submit],
+[type=button] {
+    cursor: pointer;
+}
+
+
+
+/* Navbar
+   ========================================================================== */
+
+.navbar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    min-height: 4rem !important;
+    background-color: var(--white, #fff) !important;
+    z-index: 1000 !important;
+    align-items: center !important
+}
+
+.navbar.bd-navbar .nav-link {
+    padding-left: .9rem !important;
+    padding-right: .9rem !important;
+    color: var(--napa, #b1a693)
+}
+
+.navbar.bd-navbar .navbar-brand img {
+    width: 7rem;
+}
+
+.navbar.affix {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    transition: all .3s ease;
+    background-color: var(--white, #fff);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 .06rem .2rem 0;
+    z-index: 99999 !important
+}
+
+
+
+/* Particles
+   ========================================================================== */
+
+#particles-js {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%
+}
+
+
+
+/* Hero
+   ========================================================================== */
+
+.hero h1 {
+    text-transform: inherit;
+}
+
+
+
+/* About
+   ========================================================================== */
+
+.about {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background: var(--alabaster, #fdfcfb)
+}
+
+.about .card {
+    background: inherit;
+    border: 0;
+}
+
+.about h2 {
+    color: var(--god-gray);
+}
+
+.about i {
+    color: var(--aluminum, #999);
+}
+
+
+
+/* Services
+   ========================================================================== */
+
+.services {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    text-align: center;
+    position: relative
+}
+
+.services .card {
+    background-color: var(--alabaster, #fdfcfb);
+    border: 0;
+    text-align: center;
+    display: inherit;
+    padding: 4rem 2rem;
+    min-height: 26rem
+}
+
+.services h4 {
+    padding: 0 2rem;
+    color: var(--napa, #b1a693);
+    word-break: break
+}
+
+.services .card-img {
+    display: inline-flex;
+    border-radius: 50%;
+    padding: 1rem;
+    background: var(--white, #fff);
+    width: 6rem;
+    height: 6rem;
+}
+
+.services .card-img i {
+    color: var(--napa, #b1a693) !important;
+}
+
+.services .shape {
+    position: absolute;
+    bottom: 0%;
+    left: 0
+}
+
+.services .shape img {
+    width: 20rem
+}
+
+
+
+/* Portfolio
+   ========================================================================== */
+
+.portfolio {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background: var(--white, #fff);
+}
+
+.portfolio .image-cover img {
+    padding: 0 !important
+}
+
+
+/* Clients
+   ========================================================================== */
+
+.clients {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.clients .element {
+    height: 16rem;
+    border: .06rem solid var(--grey-light, #eee);
+    border-width: 0 .06rem 0 0
+}
+
+.clients .element:nth-child(4),
+.clients .element:nth-child(8),
+.clients .element:nth-child(12),
+.clients .element:last-child {
+    border-right: 0
+}
+
+.clients .element:nth-child(odd),
+.clients .element:nth-child(even) {
+    border-bottom: .06rem solid var(--grey-light, #eee);
+}
+
+.clients .element:nth-child(13),
+.clients .element:nth-child(14),
+.clients .element:nth-child(15),
+.clients .element:nth-child(16) {
+    border-bottom: 0
+}
+
+.clients .element img {
+    position: absolute;
+    width: 15rem;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto
+}
+
+
+
+/* Values
+   ========================================================================== */
+
+.values {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background: var(--alabaster, #fdfcfb)
+}
+
+.values span {
+    color: var(--aluminum, #999);
+}
+
+.values h3 {
+    color: var(--napa, #b1a693);
+    text-transform: capitalize
+}
+
+
+
+/* Contact
+   ========================================================================== */
+
+.contact {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    color: var(--old-lace, #fff4e6);
+    background: var(--tuatara, #373737);
+    position: relative;
+    overflow: hidden
+}
+
+.contact .shape {
+    position: absolute;
+    margin-top: -8rem;
+    margin-bottom: -8rem;
+}
+
+.contact .shape-locks {
+    top: 0;
+}
+
+.contact .shape-locks img {
+    width: 50rem
+}
+
+.contact .shape-dots {
+    bottom: 0
+}
+
+.contact .shape-dots img {
+    width: 8rem
+}
+
+
+
+/* Footer
+   ========================================================================== */
+
+.footer {
+    background-color: var(--god-gray);
+    color: var(--aluminum, #999);
+    padding-top: 1rem
+}
+
+.footer svg {
+    width: 4rem
+}
+
+.footer i {
+    font-size: 2rem
+}
+
+.footer a {
+    color: var(--aluminum, #999);
+}
+
+.footer a:focus,
+.footer a:hover {
+    color: var(--serenade, #FFF4E7);
+}
+
+.footer address {
+    font-size: .9rem;
+}
+
+
+
+/* Copyright
+   ========================================================================== */
+
+.copyright {
+    position: fixed;
+    display: grid;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    pointer-events: none;
+    padding: 1.5em;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto 4em;
+    grid-template-areas: "... decotitle" "... decotitle" "... decotitle";
+}
+
+.copyright p {
+    grid-area: decotitle;
+    -webkit-writing-mode: vertical-lr;
+    writing-mode: vertical-lr;
+    text-align: right;
+    align-self: end;
+    justify-self: end;
+    pointer-events: none;
+    color: var(--cloudy, #b1a8a0)
+}

@@ -1,0 +1,45 @@
+{
+  "name": "tarmeez",
+  "version": "1.0.0",
+  "description": "Tarmeez Website",
+  "main": "server.js",
+  "dependencies": {
+    "clean-css": "^4.1.11",
+    "easyimage": "^3.0.0",
+    "imagemin": "^5.3.1",
+    "imagemin-gif2webp": "^1.0.0",
+    "imagemin-jpegtran": "^5.0.2",
+    "imagemin-pngquant": "^5.0.1",
+    "imagemin-webp": "^4.1.0",
+    "install": "^0.10.4",
+    "jimp": "^0.2.28",
+    "node-minify": "^2.4.2",
+    "npm": "^5.6.0",
+    "pageres": "^4.5.1",
+    "pretty": "^2.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/MiniNaim/tarmeez.git"
+  },
+  "keywords": [
+    "Design",
+    "Mobile",
+    "UI",
+    "Web"
+  ],
+  "author": "MiniNaim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/MiniNaim/tarmeez/issues"
+  },
+  "homepage": "https://gitlab.com/MiniNaim/tarmeez#README"
+}
