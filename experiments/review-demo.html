@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Review demo (not linked from the site)</title>
+</head>
+<body>
+  <h1>Preview a greeting</h1>
+  <label for="name">Your name</label>
+  <input id="name" type="text">
+  <button id="preview" type="button">Preview</button>
+  <div id="result" aria-live="polite"></div>
+  <script>
+    const input = document.querySelector('#name');
+    const result = document.querySelector('#result');
+
+    document.querySelector('#preview').addEventListener('click', () => {
+      const name = input.value;
+      result.innerHTML = '<p>Hello, ' + name + '!</p>';
+    });
+  </script>
+</body>
+</html>
